@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h2>Product</h2>
+
+
+<ul>
+
+
+    <li>name : {{ pdata.name }}</li>
+    <li>barcode : {{ pdata.barcode }}</li>
+    <li>retail : {{ pdata.price_retail }} euro</li>
+    <li>wholesale : {{ pdata.price_wholesale }} euro</li>
+
+
+</ul>
+
+
+{% endblock %}

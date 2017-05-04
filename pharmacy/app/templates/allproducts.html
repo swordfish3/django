@@ -2,7 +2,7 @@
 
 {% block body_block %}
 <ul id="results">
-        {% for ps in data %}
+        {% for ps in alldata %}
          <li> <a href = "/app/allproducts/{{ps.id}}"> {{ps.name}}</a> </li>
         {% endfor %}
     </ul>
