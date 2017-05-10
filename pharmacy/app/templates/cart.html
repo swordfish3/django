@@ -1,0 +1,17 @@
+{% extends "product.html" %}
+
+{% block side_block %}
+
+
+        {% for item in cart %}
+        <ul>
+            <li>Product:{{ item.product.name }}</li>
+            <li>Quantity:{{ item.quantity }}</li>
+            <li>Total Price:{{ item.total_price }}</li>
+            <h5><a href="/app/allproducts/{{item.product.name}}/remove">remove</a></h5>
+        </ul>
+
+        {% endfor %}
+
+    <h5><a href="/app/allproducts">go back</a></h5>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h2>Product</h2>
+
+
+<ul>
+
+
+    <li>name : {{ pdata.name }}</li>
+    <li>barcode : {{ pdata.barcode }}</li>
+    <li>retail : {{ pdata.price_retail }} euro</li>
+    <li>wholesale : {{ pdata.price_wholesale }} euro</li>
+
+
+</ul>
+<h5><a href="javascript:history.go(-1)">go back</a></h5>
+<h5><a href="/app/allproducts/{{pdata.id}}/add">add(+1)</a></h5>
+
+{%endblock%}
+
